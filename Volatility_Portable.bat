@@ -36,8 +36,8 @@ echo %date% %time% INFO: Installing Python
 CHOICE /T 5 /C y /CS /D y 1>> output.log 2>&1
 
 echo %date% %time% INFO: Setting Path for Python 37
-:: JUST SET PATH TO WHAT I NEED ... set PATH=%PATH%;%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Python\Launcher\;
-set PATH=%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Python\Launcher\;
+set PATH=C:\WINDOWS\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Python\Launcher\;
+set PYTHONPATH=%LOCALAPPDATA%\Programs\Python\Python37
 
 
 echo %date% %time% INFO: Downloading Volatility3
