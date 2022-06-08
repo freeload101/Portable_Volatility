@@ -12,7 +12,7 @@ echo '--------------------------------------------------------------------------
 cd "%~dp0"
 set BASE=%~dp0
 :: LOCAL CMD TESTING set BASE=%CD%\
-:: LOCAL CMD TESTING set PATH=%PATH%;%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Programs\Python\Launcher\;
+:: LOCAL CMD TESTING set PATH=%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Programs\Python\Launcher\;
 cd "%BASE%"
 
 echo %date% %time% INFO: Downloading Python
@@ -36,7 +36,8 @@ echo %date% %time% INFO: Installing Python
 CHOICE /T 5 /C y /CS /D y 1>> output.log 2>&1
 
 echo %date% %time% INFO: Setting Path for Python 37
-set PATH=%PATH%;%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Python\Launcher\;
+:: JUST SET PATH TO WHAT I NEED ... set PATH=%PATH%;%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Python\Launcher\;
+set PATH=%LOCALAPPDATA%\Programs\Python\Python37\Scripts\;%LOCALAPPDATA%\Programs\Python\Python37\;%LOCALAPPDATA%\Python\Launcher\;
 
 
 echo %date% %time% INFO: Downloading Volatility3
