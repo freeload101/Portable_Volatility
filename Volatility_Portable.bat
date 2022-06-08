@@ -81,6 +81,9 @@ echo %date% %time% INFO: Compiling Volatility3
 cd "%BASE%volatility3-develop\volatility3\"
 pyinstaller  --upx-dir "%BASE%upx-3.96-win64" ..\vol.spec 1>> output.log 2>&1
 
+
+explorer "%BASE%volatility3-develop\volatility3\dist\"
+
 echo %date% %time% INFO: Download Volatility3 Symbols ( like 800 megs )
 cd "%BASE%volatility3-develop\volatility3\dist"
 powershell "(New-Object Net.WebClient).DownloadFile('https://downloads.volatilityfoundation.org/volatility3/symbols/windows.zip', \"%BASE%windows.zip\")" 
@@ -90,7 +93,7 @@ rd /q/s "%BASE%volatility3-develop\volatility3\dist\symbols\windows" 1>> output.
 mkdir "%BASE%volatility3-develop\volatility3\dist\symbols"
 powershell  -command "& {Add-Type -Assembly "System.IO.Compression.Filesystem"; [System.IO.Compression.ZipFile]::ExtractToDirectory(\"%BASE%windows.zip\",  \"%BASE%\volatility3-develop\volatility3\dist\symbols\")  }" 1>> output.log 2>&1
 
-explorer "%BASE%volatility3-develop\volatility3\dist\"
+
 
 
 echo "Example Usage :"
