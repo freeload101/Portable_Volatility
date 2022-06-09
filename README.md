@@ -8,3 +8,6 @@ This script will install Python and build Volatility for you. **(Me)**
 * Downloads Symbols
 
 Thanks ikelos https://github.com/ikelos !
+
+See Also : Portable WinPMEM
+https://github.com/freeload101/SCRIPTS/blob/master/Windows_Powershell_ps/WinPMEM_Portable.ps1
