@@ -82,7 +82,7 @@ cd "%BASE%volatility3-develop\volatility3\"
 pyinstaller  --upx-dir "%BASE%upx-3.96-win64" ..\vol.spec 1>> output.log 2>&1
 
 
-explorer "%BASE%volatility3-develop\volatility3\dist\"
+"C:\Windows\explorer.exe" "%BASE%volatility3-develop\volatility3\dist\"
 
 echo %date% %time% INFO: Download Volatility3 Symbols ( like 800 megs )
 cd "%BASE%volatility3-develop\volatility3\dist"
