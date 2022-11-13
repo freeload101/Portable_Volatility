@@ -1,8 +1,4 @@
 <# 
--RedirectStandardOutput RedirectStandardOutput.txt -RedirectStandardError RedirectStandardError.txt
-start RedirectStandardOutput.txt 
-start RedirectStandardError.txt
-
 TODO: 
 *warn about existing python env ...
 * check for existing python env
