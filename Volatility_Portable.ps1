@@ -1,4 +1,6 @@
 <# 
+Tested OK : 8:16 PM 5/21/2023 Microsoft Windows 10 Pro Version	10.0.19045 Build 19045	
+
 TODO: 
 *warn about existing python env ...
 * check for existing python env
