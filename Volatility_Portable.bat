@@ -1,1 +1,2 @@
-this is gross use my ps1 script https://github.com/freeload101/Portable_Volatility/blob/main/Volatility_Portable.ps1
+THIS PROJECT HAS BEEN MOVED TO JAMBOREE
+JAMBOREE.RMCCURDY.COM
